@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repozitoriu la Distanță</title>
+    <style>
+        /* Resetarea stilurilor implicite */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Stiluri generale */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .text-section, .image-section {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .text-section:hover, .image-section:hover {
+            transform: scale(1.03);
+        }
+
+        .text-section h2 {
+            font-size: 1.8rem;
+            color: #555;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .text-section p {
+            margin: 15px 0;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .text-section b {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-section img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #282c34;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsivitate pentru dispozitive mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .text-section, .image-section {
+                margin: 20px 0;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Informații despre Repozitoriu la Distanță</h1>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Secțiunea de text -->
+        <div class="text-section">
+            <h2>Ce este un Repozitoriu la Distanță?</h2>
+            <p>
+                Un repozitoriu la distanță este o locație centrală unde proiectele software sunt stocate și gestionate. <br>
+                Acesta permite colaborarea între diferiți dezvoltatori care pot contribui la proiect de la distanță, <br>
+                folosind instrumente precum Git și GitHub.
+            </p>
+            <p>
+                De asemenea, repozitoriile la distanță facilitează versionarea codului, permițând dezvoltatorilor să <br>
+                urmărească modificările și să colaboreze eficient pe diverse ramuri ale proiectului.
+            </p>
+            <h2>Importanța Utilizării Git și GitHub pentru Lucrul în Echipă</h2>
+            <p>
+                <b>Versionare și Istoric al Modificărilor:</b> Git salvează fiecare schimbare din <br>
+                proiect, astfel încât echipa poate reveni la versiuni anterioare dacă apar <br>
+                probleme. Fiecare contribuție este documentată clar.
+            </p>
+            <p>
+                <b>Lucrul pe Ramuri (Branch-uri):</b> Fiecare membru poate lucra la o funcționalitate <br>
+                pe o ramură separată, evitând conflictele cu codul principal. Ramurile sunt <br>
+                îmbinate doar când modificările sunt gata.
+            </p>
+            <p>
+                <b>Colaborare la Distanță:</b> GitHub permite echipelor să colaboreze de oriunde și <br>
+                să contribuie la proiect în mod asincron. Codul este încărcat și sincronizat în <br>
+                rețeaua centralizată.
+            </p>
+            <p>
+                <b>Control al Versiunilor Distribuit:</b> Fiecare membru are o copie completă a <br>
+                proiectului și poate lucra offline, sincronizând schimbările ulterior.
+            </p>
+            <p>
+                <b>Revizuirea Codului:</b> GitHub permite revizuirea codului prin Pull Requests, <br>
+                asigurând calitatea și discutarea modificărilor înainte de integrarea lor.
+            </p>
+        </div>
+
+        <!-- Secțiunea de imagini -->
+        <div class="image-section">
+            <img src="./imagine/logo.png" alt="GitHub Logo">
+            <img src="./imagine/Git-Icon-1788C.png" alt="Git Logo">
+            <img src="./imagine/create_repo.png" alt="Create Repozitoriu">
+            <img src="./imagine/img_git_push_branch_to_github.png" alt="Branch-uri">
+            <img src="./imagine/img_github_pages_created_url.png" alt="Create Url">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Repozitoriu la Distanță - Toate drepturile rezervate.</p>
+</footer>
+
+</body>
+</html>
